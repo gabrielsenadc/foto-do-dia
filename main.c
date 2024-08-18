@@ -24,7 +24,7 @@ int main(){
             for(int i = 0; i < qtd; i++){
                 fscanf(input, "%d/%d/%d%*c", &day, &month, &year);
                 Date * aux = createDate(day, month, year);
-                insereHash(hash, name, aux);
+                insereInicioHash(hash, name, aux);
                 free(aux);
             }
             fscanf(input, "%*c");

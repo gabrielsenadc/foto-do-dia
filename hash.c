@@ -32,7 +32,7 @@ Hash * criaHash(int size){
     return hash;
 }
 
-void insereHash(Hash *hash, char *name, Date * date){
+void insereInicioHash(Hash *hash, char *name, Date * date){
     int index = hashFunction(name, hash->size);
 
     Person *aux = hash->tab[index];
@@ -50,7 +50,41 @@ void insereHash(Hash *hash, char *name, Date * date){
         hash->tab[index] = aux;
 
         aux->dates = createDateList();
-        aux->qtd = 0;
+        aux->qtd = 0;        
+    }
+
+    Date * new = copyDate(date);
+    insertDate(aux->dates, new);
+    aux->qtd++;
+}
+
+void insereHash(Hash *hash, char *name, Date * date){
+    int index = hashFunction(name, hash->size);
+
+    Person *aux = hash->tab[index];
+
+    while(aux){
+        if(!strcmp(aux->name, name)) break;
+        aux = aux->next;
+    }
+
+    if(aux == NULL){
+        char res;
+        printf("Certeza que deseja adicionar %s? (s/n)\n", name);
+        scanf("%c%*c", &res);
+        if(res == 's'){
+            aux = malloc(sizeof(Person));
+
+            aux->name = strdup(name);
+            aux->next = hash->tab[index];
+            hash->tab[index] = aux;
+
+            aux->dates = createDateList();
+            aux->qtd = 0;
+
+            printf("pessoa adicionada com sucesso\n");
+        } else return;
+        
     }
 
     Date * new = copyDate(date);
