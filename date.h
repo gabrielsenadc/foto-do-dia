@@ -9,6 +9,8 @@ typedef struct list DateList;
 
 Date * createDate(int day, int month, int year);
 
+void setDate(Date * date, int day, int month, int year);
+
 Date * copyDate(Date * date);
 
 void incDate(Date * date); 

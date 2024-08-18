@@ -32,6 +32,12 @@ Date * createDate(int day, int month, int year){
     return date;
 }
 
+void setDate(Date * date, int day, int month, int year){
+    date->day = day;
+    date->month = month;
+    date->year = year;
+}
+
 Date * copyDate(Date * date){
     Date * dateNew = malloc(sizeof(Date));
 

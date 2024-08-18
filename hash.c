@@ -146,7 +146,7 @@ void imprimeHash(Hash *hash, FILE * output){
     qsort(vet, tam, sizeof(Person*), comparePeopleHash);
 
     for(int i = 0; i < tam; i++){
-        fprintf(output, "%s %d:\n", vet[i]->name, vet[i]->qtd);
+        fprintf(output, "%s - %d:\n", vet[i]->name, vet[i]->qtd);
         printFileDateList(vet[i]->dates, output);
         fprintf(output, "\n");
     }
