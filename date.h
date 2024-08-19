@@ -37,6 +37,10 @@ void printDateList(DateList * list);
 
 void printFileDateList(DateList * list, FILE * file);
 
+DateList * filterList(DateList * list, Date * start, Date * end);
+
+int getListQtt(DateList * list);
+
 
 
 #endif

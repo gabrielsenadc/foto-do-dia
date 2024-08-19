@@ -16,5 +16,9 @@ void liberaHash(Hash * hash);
 
 void imprimeHash(Hash *hash, FILE * output);
 
+void imprimeRank(Hash *hash, FILE * output);
+
+Hash * filtraHash(Hash * hash, Date * start, Date * end);
+
 
 #endif

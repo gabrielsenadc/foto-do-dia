@@ -164,3 +164,47 @@ void printDateList(DateList * list){
 void printFileDateList(DateList * list, FILE * file){
     printFileCell(list->first, file);
 }   
+
+int isBefore(Date * date, Date * end){
+    if(date->year < end->year) return 1;
+    if(date->year == end->year){
+        if(date->month < end->month) return 1;
+        if(date->month == end->month){
+            if(date->day <= end->day) return 1;
+        }
+    }
+    return 0;
+}
+
+int isAfter(Date * date, Date * start){
+    if(date->year > start->year) return 1;
+    if(date->year == start->year){
+        if(date->month > start->month) return 1;
+        if(date->month == start->month){
+            if(date->day >= start->day) return 1;
+        }
+    }
+    return 0;
+}
+
+int isBetween(Date * date, Date * start, Date * end){  
+    if(isAfter(date, start) && isBefore(date, end)) return 1;
+
+    return 0;
+}
+
+DateList * filterList(DateList * list, Date * start, Date * end){
+    DateList * new = createDateList();
+
+    for(Cell * cell = list->first; cell; cell = cell->next){
+        if(isBetween(cell->date, start, end)) insertDate(new, copyDate(cell->date));
+    }
+
+    return new;
+}
+
+int getListQtt(DateList * list){
+    int total = 0;
+    for(Cell * cell = list->first; cell; cell = cell->next) total++;
+    return total;
+}

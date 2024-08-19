@@ -187,3 +187,63 @@ void imprimeHash(Hash *hash, FILE * output){
 
 }
 
+void imprimeRank(Hash *hash, FILE * output){
+    int tam = getQtdHash(hash), j = 0;
+
+    Person *vet[tam];
+    for(int i = 0; i < hash->size; i++){
+        Person * aux = hash->tab[i];
+        while(aux){
+            vet[j] = aux;
+            j++;
+            aux = aux->next;
+        }
+    }
+
+    qsort(vet, tam, sizeof(Person*), comparePeopleHash);
+
+    for(int i = 0; i < tam; i++){
+        fprintf(output, "%d° %s - %d\n", i + 1, vet[i]->name, vet[i]->qtd);
+    }
+
+}
+
+void insereDatasHash(Hash *hash, char *name, DateList * list){
+    int index = hashFunction(name, hash->size);
+
+    Person *aux = hash->tab[index];
+
+    while(aux){
+        if(!strcmp(aux->name, name)) break;
+        aux = aux->next;
+    }
+
+    if(aux == NULL){
+        aux = malloc(sizeof(Person));
+
+        aux->name = strdup(name);
+        aux->next = hash->tab[index];
+        hash->tab[index] = aux;
+
+        aux->dates = list;
+        aux->qtd = getListQtt(list);        
+    }
+}
+
+Hash * filtraHash(Hash * hash, Date * start, Date * end){
+    Hash * new = criaHash(13);
+
+    for(int i = 0; i < hash->size; i++){
+        Person * aux = hash->tab[i];
+        while(aux){
+            DateList * list = filterList(aux->dates, start, end);
+            if(getListQtt(list) > 0) insereDatasHash(new, aux->name, list);
+            else freeDateList(list);
+
+            aux = aux->next;
+        }
+
+    }
+
+    return new;
+}
