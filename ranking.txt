@@ -1,59 +1,79 @@
-1° gabriel - 47
-2° eduardo - 36
-3° pedro - 19
-4° malu - 16
-5° julia - 15
-6° mae - 15
-7° raony - 13
-8° aline - 11
-9° karen - 11
-10° pai - 9
-11° samuel - 8
-12° marcela - 7
-13° gi - 6
-14° alice - 5
-15° amanda - 5
-16° karina - 5
-17° laura - 5
-18° guilherme - 4
-19° alice (prima) - 3
-20° davi (primo) - 3
-21° eliza - 3
-22° julia nicoli - 3
-23° livia helena - 3
-24° matheus - 3
-25° bernardo vegano - 2
-26° bimo - 2
-27° douglas (amanda) - 2
-28° joao pedro - 2
-29° mavi - 2
-30° nando - 2
-31° ryvian - 2
-32° tia milena - 2
-33° tio vinicius - 2
-34° vitor (primo) - 2
-35° vovo mada - 2
-36° vovo tete - 2
-37° adival - 1
-38° barbara - 1
-39° bia - 1
-40° boechat - 1
-41° branquelo - 1
-42° camila - 1
-43° cara do guarda chuva da lama - 1
-44° catarina - 1
-45° dani - 1
-46° fernanda - 1
-47° isabela (matheus (primo)) - 1
-48° isabella - 1
-49° jadir - 1
-50° joao (karen) - 1
-51° livia - 1
-52° marcelo - 1
-53° mariana - 1
-54° matheus (primo) - 1
-55° nina - 1
-56° paula - 1
-57° raquel - 1
-58° taylor - 1
-59° zanetti - 1
+1° eduardo - 68
+2° gabriel - 59
+3° malu - 25
+4° julia - 23
+5° raony - 23
+6° pedro - 22
+7° mae - 14
+8° aline - 13
+9° karen - 12
+10° marcela - 12
+11° gi - 10
+12° arthur - 9
+13° pai - 9
+14° laura - 8
+15° alice - 7
+16° ana carolina - 5
+17° daniel - 5
+18° karina - 5
+19° matheus - 5
+20° samuel - 5
+21° barbara - 4
+22° jheam - 4
+23° joao - 4
+24° bel - 3
+25° bimo - 3
+26° caio (alice) - 3
+27° ellyas - 3
+28° isabella - 3
+29° joao henrique - 3
+30° joao paulo - 3
+31° ryvian - 3
+32° adival - 2
+33° amanda - 2
+34° eliza - 2
+35° gabriela (introcomp) - 2
+36° matheus cinema - 2
+37° mavi (julia) - 2
+38° pedro crente - 2
+39° rafael lima - 2
+40° rafaela - 2
+41° rangel - 2
+42° sodre - 2
+43° tales - 2
+44° antonio - 1
+45° arthur tosi - 1
+46° caio - 1
+47° carol - 1
+48° cecilia - 1
+49° conrado - 1
+50° daniel gobbi - 1
+51° debora - 1
+52° dornelas - 1
+53° felipe - 1
+54° felipe passarela - 1
+55° guilherme - 1
+56° jadir - 1
+57° joao pedro - 1
+58° joss - 1
+59° julia nicoli - 1
+60° kaio - 1
+61° leticia - 1
+62° leticia (daniel) - 1
+63° livia - 1
+64° livya - 1
+65° luca - 1
+66° luisa elena - 1
+67° luiz - 1
+68° madu - 1
+69° mae do eduardo - 1
+70° malu (darwin) - 1
+71° maria antonia - 1
+72° mubi - 1
+73° sara bendia - 1
+74° sissa - 1
+75° sophia - 1
+76° thais - 1
+77° vampira do cemuni - 1
+78° victor dutra - 1
+79° yuri - 1

@@ -42,7 +42,7 @@ int main(){
     FILE * output = fopen("ranking.txt", "w");
     FILE * saida = fopen("analise.txt", "w");
 
-    imprimeRank(hash, output);
+    imprimeRank(new, output);
     imprimeHash(new, saida);
     
     freeDate(start);
